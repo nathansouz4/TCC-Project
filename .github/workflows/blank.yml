@@ -27,8 +27,9 @@ jobs:
         key: ${{ secrets.EC2_SSH_KEY }}
         port: 22
         script: |
+          mkdir torres
           echo "Iniciando rsync com verbosidade..."
-          rsync -avz --delete ./ /home/ec2-user/
+          rsync -avz ./ /home/ec2-user/
           echo "Listando o conteúdo do diretório de destino:"
           ls /home/ec2-user/
 
