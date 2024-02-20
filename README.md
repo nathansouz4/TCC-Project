@@ -2,4 +2,4 @@
 
 testing CI-CD with `github actions`.
 
-testing 1.
+* testing deploy v1
