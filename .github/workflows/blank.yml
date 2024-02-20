@@ -19,12 +19,16 @@ jobs:
         echo "Listando arquivos e diretórios no diretório atual:"
         ls -la
 
-    - name: Copy files with SSH
-      uses: easingthemes/ssh-deploy@main
-      env:
-        SSH_PRIVATE_KEY: ${{secrets.EC2_SSH_KEY}}
-        ARGS: "-avz --delete"
-        SOURCE: "./"
-        REMOTE_HOST: ${{ secrets.HOST }}
-        REMOTE_USER: "ec2-user"
-        TARGET: "home/ec2-user"
+    - name: Sync files with SSH
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ec2-user
+        key: ${{ secrets.EC2_SSH_KEY }}
+        port: 22
+        script: |
+          echo "Iniciando rsync com verbosidade..."
+          rsync -avz --delete ./ /home/ec2-user/
+          echo "Listando o conteúdo do diretório de destino:"
+          ls /home/ec2-user/
+
