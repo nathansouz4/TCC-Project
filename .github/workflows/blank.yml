@@ -18,7 +18,7 @@ jobs:
       run: |
         echo "Listando arquivos e diretórios no diretório atual:"
         ls -la
-
+        
     - name: Sync files with SSH
       uses: appleboy/ssh-action@master
       with:
@@ -28,7 +28,6 @@ jobs:
         port: 22
         script: |
           echo "Iniciando rsync com verbosidade..."
-          cp -rf ./ /home/ec2-user/
+          rsync -avz --delete ./* /home/ec2-user/
           echo "Listando o conteúdo do diretório de destino:"
           ls /home/ec2-user/
-
