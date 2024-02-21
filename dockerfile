@@ -24,4 +24,5 @@ COPY . /app
 EXPOSE 8501
 
 # 7. Comando para executar a aplicação Streamlit
-CMD ["streamlit", "run", "test.py"]
+#nohup
+CMD ["python3","-m","streamlit", "run", "test.py"]

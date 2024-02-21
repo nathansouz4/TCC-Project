@@ -22,21 +22,21 @@ jobs:
         password: ${{ secrets.DOCKER_HUB_PASSWORD }}
         
     - name: Build Docker image
-      run: docker build . --file dockerfile --tag ${{ secrets.DOCKER_HUB_USERNAME }}/test-deploy:${{ github.sha }}
+      run: docker build . --file dockerfile --tag ${{ secrets.DOCKER_HUB_USERNAME }}/test-deploy:latest
       
     - name: Push Docker image to Docker Hub
-      run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/test-deploy:${{ github.sha }}
+      run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/test-deploy:latest
    
   deploy:
     needs: build-and-push
-    runs-on: self-hosted # Se você tem um runner específico, substitua 'self-hosted' pelo label do seu runner EC2.
+    runs-on: aws-ec2 
     
     steps:
-      - name: Pull Image from DockerHub
-        run: docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/test-deploy:${{ github.sha }}
-      
       - name: Stop and remove all containers
         run: docker stop $(docker ps -aq) && docker rm $(docker ps -aq)
-        
+
+      - name: Pull Image from DockerHub
+        run: docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/test-deploy:latest
+      
       - name: Run new Docker container
-        run: docker run -d -p 8501:8501 --name myapp ${{ secrets.DOCKER_HUB_USERNAME }}/test-deploy:${{ github.sha }}
+        run: docker run -d -p 8501:8501 --name myapp ${{ secrets.DOCKER_HUB_USERNAME }}/test-deploy:latest
