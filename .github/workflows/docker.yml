@@ -26,14 +26,21 @@ jobs:
       
     - name: Push Docker image to Docker Hub
       run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/test-deploy:latest
-   
-  deploy:
+
+    - name: Clean up Docker
+      run: |
+        docker system prune -af
+
+  deploy: 
     needs: build-and-push
-    runs-on: aws-ec2 
+    runs-on: [aws-ec2]
     
     steps:
       - name: Stop and remove all containers
         run: docker stop $(docker ps -aq) && docker rm $(docker ps -aq)
+
+      - name: Remove all old images
+        run: docker image prune -af
 
       - name: Pull Image from DockerHub
         run: docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/test-deploy:latest
