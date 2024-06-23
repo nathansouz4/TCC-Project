@@ -1,0 +1,49 @@
+name: Docker Build and Push
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'env.yml'
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Login to Docker Hub
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKER_HUB_USERNAME }}
+        password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+        
+    - name: Build Docker image
+      run: docker build . --file dockerfile --tag ${{ secrets.DOCKER_HUB_USERNAME }}/test-deploy:latest
+      
+    - name: Push Docker image to Docker Hub
+      run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/test-deploy:latest
+
+    - name: Clean up Docker
+      run: |
+        docker system prune -af
+
+  deploy: 
+    needs: build-and-push
+    runs-on: [aws-ec2]
+    
+    steps:
+      - name: Stop and remove all containers
+        run: docker stop $(docker ps -aq) && docker rm $(docker ps -aq)
+
+      - name: Remove all old images
+        run: docker image prune -af
+
+      - name: Pull Image from DockerHub
+        run: docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/test-deploy:latest
+      
+      - name: Run new Docker container
+        run: docker run -d -p 8501:8501 --name myapp ${{ secrets.DOCKER_HUB_USERNAME }}/test-deploy:latest
