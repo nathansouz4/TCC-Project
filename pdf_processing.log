@@ -78,3 +78,219 @@
 2024-06-22 16:35:40,345 Retrying langchain_google_genai.llms._completion_with_retry.<locals>._completion_with_retry in 4.0 seconds as it raised ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
 2024-06-22 16:35:45,280 Retrying langchain_google_genai.llms._completion_with_retry.<locals>._completion_with_retry in 8.0 seconds as it raised ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
 2024-06-22 16:35:54,194 Retrying langchain_google_genai.llms._completion_with_retry.<locals>._completion_with_retry in 10.0 seconds as it raised ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
+2024-06-22 22:37:01,192 Successfully processed PDF: NBR_5413.pdf
+2024-06-22 22:37:02,103 Successfully processed PDF: NBR_13570.pdf
+2024-06-22 22:37:05,407 Successfully processed PDF: NBR_10898.pdf
+2024-06-22 22:37:09,452 Successfully processed PDF: NBR_14039.pdf
+2024-06-22 22:37:14,075 Successfully processed PDF: NBR_16280.pdf
+2024-06-22 22:37:15,950 Successfully processed PDF: NBR_15514.pdf
+2024-06-22 22:37:18,437 Successfully processed PDF: ABNT_NBR_IEC_60079_14.pdf
+2024-06-22 22:37:21,502 Successfully processed PDF: NBR_5419_1.pdf
+2024-06-22 22:37:22,661 Successfully processed PDF: NBR_5419_2.pdf
+2024-06-22 22:37:23,155 Successfully processed PDF: NBR_5419_3.pdf
+2024-06-22 22:37:24,193 Successfully processed PDF: NBR_5419_4.pdf
+2024-06-22 22:37:27,726 Successfully processed PDF: NBR_5410.pdf
+2024-06-22 22:49:57,035 NumExpr defaulting to 8 threads.
+2024-06-22 22:50:11,696 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-22 22:50:11,696 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-23 15:48:41,768 Successfully processed PDF: NBR_5413.pdf
+2024-06-23 15:48:42,725 Successfully processed PDF: NBR_13570.pdf
+2024-06-23 15:48:46,372 Successfully processed PDF: NBR_10898.pdf
+2024-06-23 15:48:49,315 Successfully processed PDF: NBR_14039.pdf
+2024-06-23 15:48:54,592 Successfully processed PDF: NBR_16280.pdf
+2024-06-23 15:48:56,635 Successfully processed PDF: NBR_15514.pdf
+2024-06-23 15:48:59,230 Successfully processed PDF: ABNT_NBR_IEC_60079_14.pdf
+2024-06-23 15:49:03,212 Successfully processed PDF: NBR_5419_1.pdf
+2024-06-23 15:49:04,921 Successfully processed PDF: NBR_5419_2.pdf
+2024-06-23 15:49:05,127 Successfully processed PDF: NBR_5419_3.pdf
+2024-06-23 15:49:06,426 Successfully processed PDF: NBR_5419_4.pdf
+2024-06-23 15:49:08,645 Successfully processed PDF: NBR_5410.pdf
+2024-06-23 15:54:40,811 NumExpr defaulting to 8 threads.
+2024-06-23 15:54:41,557 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-23 15:54:41,558 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-23 16:08:45,625 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-23 16:08:45,626 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-23 16:22:52,254 Successfully processed PDF: NBR_5413.pdf
+2024-06-23 16:22:53,956 Successfully processed PDF: NBR_13570.pdf
+2024-06-23 16:22:57,209 Successfully processed PDF: NBR_10898.pdf
+2024-06-23 16:22:59,505 Successfully processed PDF: NBR_14039.pdf
+2024-06-23 16:23:05,275 Successfully processed PDF: NBR_16280.pdf
+2024-06-23 16:23:08,568 Successfully processed PDF: NBR_15514.pdf
+2024-06-23 16:23:08,804 Successfully processed PDF: ABNT_NBR_IEC_60079_14.pdf
+2024-06-23 16:23:13,609 Successfully processed PDF: NBR_5419_1.pdf
+2024-06-23 16:23:14,663 Successfully processed PDF: NBR_5419_2.pdf
+2024-06-23 16:23:15,749 Successfully processed PDF: NBR_5419_3.pdf
+2024-06-23 16:23:16,808 Successfully processed PDF: NBR_5419_4.pdf
+2024-06-23 16:23:18,309 Successfully processed PDF: NBR_5410.pdf
+2024-06-23 16:52:51,843 NumExpr defaulting to 8 threads.
+2024-06-23 16:54:06,568 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-23 16:54:06,569 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-23 18:28:25,823 Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2024-06-23 18:34:27,076 Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2024-06-23 20:17:03,749 Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2024-06-23 20:18:06,755 Reading PDF doc: nr-10-copy.pdf
+2024-06-23 20:18:06,755 Reading PDF doc: nr-10.pdf
+2024-06-23 20:18:06,855 pikepdf C++ to Python logger bridge initialized
+2024-06-23 20:18:11,021 Reading PDF for file: /Users/nathan/workspace/tcc/test/nr-10.pdf ...
+2024-06-23 20:18:11,788 Reading PDF for file: /Users/nathan/workspace/tcc/test/nr-10-copy.pdf ...
+2024-06-23 20:18:11,936 Detecting page elements ...
+2024-06-23 20:18:12,501 Detecting page elements ...
+2024-06-23 20:18:14,251 Detecting page elements ...
+2024-06-23 20:18:15,022 Detecting page elements ...
+2024-06-23 20:18:16,855 Detecting page elements ...
+2024-06-23 20:18:17,318 Detecting page elements ...
+2024-06-23 20:18:19,180 Detecting page elements ...
+2024-06-23 20:18:19,460 Detecting page elements ...
+2024-06-23 20:18:21,007 Detecting page elements ...
+2024-06-23 20:18:21,350 Detecting page elements ...
+2024-06-23 20:18:22,927 Detecting page elements ...
+2024-06-23 20:18:23,644 Detecting page elements ...
+2024-06-23 20:18:25,123 Detecting page elements ...
+2024-06-23 20:18:26,010 Detecting page elements ...
+2024-06-23 20:18:27,465 Detecting page elements ...
+2024-06-23 20:18:28,193 Detecting page elements ...
+2024-06-23 20:18:29,492 Detecting page elements ...
+2024-06-23 20:18:30,276 Detecting page elements ...
+2024-06-23 20:18:31,563 Detecting page elements ...
+2024-06-23 20:18:32,241 Detecting page elements ...
+2024-06-23 20:18:33,364 Detecting page elements ...
+2024-06-23 20:18:34,060 Detecting page elements ...
+2024-06-23 20:18:35,165 Detecting page elements ...
+2024-06-23 20:18:36,006 Detecting page elements ...
+2024-06-23 20:18:37,147 Detecting page elements ...
+2024-06-23 20:18:37,777 Detecting page elements ...
+2024-06-23 20:18:39,065 Detecting page elements ...
+2024-06-23 20:18:39,623 Detecting page elements ...
+2024-06-23 20:18:40,906 Detecting page elements ...
+2024-06-23 20:18:41,464 Detecting page elements ...
+2024-06-23 20:18:42,745 Detecting page elements ...
+2024-06-23 20:18:43,295 Detecting page elements ...
+2024-06-23 20:18:44,560 Detecting page elements ...
+2024-06-23 20:18:45,094 Detecting page elements ...
+2024-06-23 20:18:46,511 Detecting page elements ...
+2024-06-23 20:18:46,894 Detecting page elements ...
+2024-06-23 20:18:52,238 Loading the Table agent ...
+2024-06-23 20:18:52,239 Loading the Table agent ...
+2024-06-23 20:18:52,239 Loading the table structure model ...
+2024-06-23 20:18:52,239 Loading the table structure model ...
+2024-06-23 20:18:52,746 Loading pretrained weights from Hugging Face hub (timm/resnet18.a1_in1k)
+2024-06-23 20:18:52,812 Loading pretrained weights from Hugging Face hub (timm/resnet18.a1_in1k)
+2024-06-23 20:18:52,944 [timm/resnet18.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-06-23 20:18:52,995 [timm/resnet18.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-06-23 20:18:53,052 Missing keys (fc.weight, fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2024-06-23 20:18:53,053 Missing keys (fc.weight, fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2024-06-23 20:18:53,619 padding image by 20 for structure detection
+2024-06-23 20:18:53,772 padding image by 20 for structure detection
+2024-06-23 20:19:14,092 padding image by 20 for structure detection
+2024-06-23 20:19:14,095 padding image by 20 for structure detection
+2024-06-23 20:19:18,745 Successfully processed PDF: nr-10.pdf
+2024-06-23 20:19:18,780 Successfully processed PDF: nr-10-copy.pdf
+2024-06-23 20:22:00,683 AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x288c32690>" raised exception!
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/google/auth/transport/grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 74, in __call__
+    self._callback(metadata, cygrpc.StatusCode.ok, None)
+  File "src/python/grpcio/grpc/_cython/_cygrpc/credentials.pyx.pxi", line 52, in grpc._cython.cygrpc._get_metadata.callback
+  File "src/python/grpcio/grpc/_cython/_cygrpc/metadata.pyx.pxi", line 43, in grpc._cython.cygrpc._store_c_metadata
+  File "src/python/grpcio/grpc/_cython/_cygrpc/grpc_string.pyx.pxi", line 40, in grpc._cython.cygrpc._encode
+TypeError: Expected str, not <class 'pydantic.v1.types.SecretStr'>
+2024-06-23 20:24:48,001 AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x288c31e50>" raised exception!
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/google/auth/transport/grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 74, in __call__
+    self._callback(metadata, cygrpc.StatusCode.ok, None)
+  File "src/python/grpcio/grpc/_cython/_cygrpc/credentials.pyx.pxi", line 52, in grpc._cython.cygrpc._get_metadata.callback
+  File "src/python/grpcio/grpc/_cython/_cygrpc/metadata.pyx.pxi", line 43, in grpc._cython.cygrpc._store_c_metadata
+  File "src/python/grpcio/grpc/_cython/_cygrpc/grpc_string.pyx.pxi", line 40, in grpc._cython.cygrpc._encode
+TypeError: Expected str, not <class 'pydantic.v1.types.SecretStr'>
+2024-06-23 20:55:03,299 AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x2a81516a0>" raised exception!
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/google/auth/transport/grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 74, in __call__
+    self._callback(metadata, cygrpc.StatusCode.ok, None)
+  File "src/python/grpcio/grpc/_cython/_cygrpc/credentials.pyx.pxi", line 52, in grpc._cython.cygrpc._get_metadata.callback
+  File "src/python/grpcio/grpc/_cython/_cygrpc/metadata.pyx.pxi", line 43, in grpc._cython.cygrpc._store_c_metadata
+  File "src/python/grpcio/grpc/_cython/_cygrpc/grpc_string.pyx.pxi", line 40, in grpc._cython.cygrpc._encode
+TypeError: Expected str, not <class 'pydantic.v1.types.SecretStr'>
+2024-06-23 21:01:51,803 AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x2a81516a0>" raised exception!
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/google/auth/transport/grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 74, in __call__
+    self._callback(metadata, cygrpc.StatusCode.ok, None)
+  File "src/python/grpcio/grpc/_cython/_cygrpc/credentials.pyx.pxi", line 52, in grpc._cython.cygrpc._get_metadata.callback
+  File "src/python/grpcio/grpc/_cython/_cygrpc/metadata.pyx.pxi", line 43, in grpc._cython.cygrpc._store_c_metadata
+  File "src/python/grpcio/grpc/_cython/_cygrpc/grpc_string.pyx.pxi", line 40, in grpc._cython.cygrpc._encode
+TypeError: Expected str, not <class 'pydantic.v1.types.SecretStr'>
+2024-06-23 21:03:33,805 AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x2a81516a0>" raised exception!
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/google/auth/transport/grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 74, in __call__
+    self._callback(metadata, cygrpc.StatusCode.ok, None)
+  File "src/python/grpcio/grpc/_cython/_cygrpc/credentials.pyx.pxi", line 52, in grpc._cython.cygrpc._get_metadata.callback
+  File "src/python/grpcio/grpc/_cython/_cygrpc/metadata.pyx.pxi", line 43, in grpc._cython.cygrpc._store_c_metadata
+  File "src/python/grpcio/grpc/_cython/_cygrpc/grpc_string.pyx.pxi", line 40, in grpc._cython.cygrpc._encode
+TypeError: Expected str, not <class 'pydantic.v1.types.SecretStr'>
+2024-06-23 21:07:42,304 AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x288bf5520>" raised exception!
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/google/auth/transport/grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 74, in __call__
+    self._callback(metadata, cygrpc.StatusCode.ok, None)
+  File "src/python/grpcio/grpc/_cython/_cygrpc/credentials.pyx.pxi", line 52, in grpc._cython.cygrpc._get_metadata.callback
+  File "src/python/grpcio/grpc/_cython/_cygrpc/metadata.pyx.pxi", line 43, in grpc._cython.cygrpc._store_c_metadata
+  File "src/python/grpcio/grpc/_cython/_cygrpc/grpc_string.pyx.pxi", line 40, in grpc._cython.cygrpc._encode
+TypeError: Expected str, not <class 'pydantic.v1.types.SecretStr'>
+2024-06-23 21:09:47,918 Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2024-06-23 21:12:40,685 AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x288b6d730>" raised exception!
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/google/auth/transport/grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 74, in __call__
+    self._callback(metadata, cygrpc.StatusCode.ok, None)
+  File "src/python/grpcio/grpc/_cython/_cygrpc/credentials.pyx.pxi", line 52, in grpc._cython.cygrpc._get_metadata.callback
+  File "src/python/grpcio/grpc/_cython/_cygrpc/metadata.pyx.pxi", line 43, in grpc._cython.cygrpc._store_c_metadata
+  File "src/python/grpcio/grpc/_cython/_cygrpc/grpc_string.pyx.pxi", line 40, in grpc._cython.cygrpc._encode
+TypeError: Expected str, not <class 'pydantic.v1.types.SecretStr'>
+2024-06-23 21:13:14,745 AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x288b6d730>" raised exception!
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/google/auth/transport/grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 74, in __call__
+    self._callback(metadata, cygrpc.StatusCode.ok, None)
+  File "src/python/grpcio/grpc/_cython/_cygrpc/credentials.pyx.pxi", line 52, in grpc._cython.cygrpc._get_metadata.callback
+  File "src/python/grpcio/grpc/_cython/_cygrpc/metadata.pyx.pxi", line 43, in grpc._cython.cygrpc._store_c_metadata
+  File "src/python/grpcio/grpc/_cython/_cygrpc/grpc_string.pyx.pxi", line 40, in grpc._cython.cygrpc._encode
+TypeError: Expected str, not <class 'pydantic.v1.types.SecretStr'>
+2024-06-23 21:30:26,331 AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x288b6d730>" raised exception!
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 105, in __call__
+    self._metadata_plugin(
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/google/auth/transport/grpc.py", line 95, in __call__
+    callback(self._get_authorization_headers(context), None)
+  File "/opt/homebrew/anaconda3/envs/tcc/lib/python3.12/site-packages/grpc/_plugin_wrapping.py", line 74, in __call__
+    self._callback(metadata, cygrpc.StatusCode.ok, None)
+  File "src/python/grpcio/grpc/_cython/_cygrpc/credentials.pyx.pxi", line 52, in grpc._cython.cygrpc._get_metadata.callback
+  File "src/python/grpcio/grpc/_cython/_cygrpc/metadata.pyx.pxi", line 43, in grpc._cython.cygrpc._store_c_metadata
+  File "src/python/grpcio/grpc/_cython/_cygrpc/grpc_string.pyx.pxi", line 40, in grpc._cython.cygrpc._encode
+TypeError: Expected str, not <class 'pydantic.v1.types.SecretStr'>
