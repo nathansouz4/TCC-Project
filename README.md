@@ -1,73 +1,60 @@
-# Test of auto deployment of files into EC2 instances
+# Desenvolvimento de um Assistente Chatbot Inteligente para Instalações Elétricas
 
-testing CI-CD with `github actions`.
+## Visão Geral
 
-* testing deploy v1
+Este projeto de Trabalho de Conclusão de Curso (TCC) consiste no desenvolvimento de um assistente chatbot inteligente para instalações elétricas. O chatbot é baseado em um Modelo de Linguagem Grande (LLM) e utiliza a técnica RAPTOR - Recursive Abstractive Processing for Tree-Organized Retrieval para fornecer respostas precisas e contextualizadas a questões relacionadas a instalações elétricas.
 
-```
-#v1
-name: Push-to-EC2
-on:
-  push:
-    branches:
-      - main
-      
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout the files
-      uses: actions/checkout@v3
+## Índice
 
-    - name: Install rsync
-      run: sudo apt-get update && sudo apt-get install -y rsync
+- [Introdução](#introdução)
+- [Objetivos](#objetivos)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
 
-    - name: List files in the current directory
-      run: |
-        echo "Listando arquivos e diretórios no diretório atual:"
-        ls -la
+## Introdução
 
-    - name: Sync files with SSH
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: ec2-user
-        key: ${{ secrets.EC2_SSH_KEY }}
-        port: 22
-        script: |
-          echo "Iniciando rsync..."
-          rsync -avz --delete ./ /home/ec2-user/
-          echo "Listando o conteúdo do diretório de destino:"
-          ls /home/ec2-user/
-```
+O propósito deste TCC é desenvolver um assistente chatbot que possa auxiliar engenheiros, técnicos e estudantes de engenharia elétrica a resolverem dúvidas e problemas comuns em instalações elétricas. Utilizando a técnica RAPTOR, o chatbot é capaz de navegar por documentos técnicos complexos, como a norma ABNT NBR IEC 60079-14, e fornecer respostas abstrativas e contextualizadas.
 
-```
-#v2
-name: Push-to-EC2
-on:
-  push:
-    branches:
-      - main
-      
-jobs:
-  upload-files-ec2:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout the files
-      uses: actions/checkout@v4
+## Objetivos
 
-    - name: List files in the current directory
-      run: |
-        echo "Listando arquivos e diretórios no diretório atual:"
-        ls -la
-        
-    - name: copy file via ssh key
-      uses: appleboy/scp-action@v0.1.7
-      with:
-        host: ${{ secrets.HOST }}
-        username: ec2-user
-        port: 22
-        key: ${{ secrets.EC2_SSH_KEY }}
-        source: "./"
-        target: /home/ec2-user
-```
+Os principais objetivos deste projeto são:
+
+1. Desenvolver um modelo de chatbot baseado em LLM capaz de entender e responder perguntas sobre instalações elétricas.
+2. Implementar a técnica RAPTOR para otimizar a recuperação de informações e fornecer respostas abstrativas e contextualizadas.
+3. Validar a eficácia do chatbot através de testes e avaliações práticas.
+
+## Tecnologias Utilizadas
+
+- **Linguagem de Programação**: Python
+- **Framework de Desenvolvimento de Chatbots**: [Nome do Framework, ex: Rasa, GPT-3]
+- **Processamento de Linguagem Natural (NLP)**: [Bibliotecas utilizadas, ex: spaCy, NLTK]
+- **Documentação Técnica**: ABNT NBR IEC 60079-14
+- **Técnica de Recuperação**: RAPTOR (Recursive Abstractive Processing for Tree-Organized Retrieval)
+
+## Estrutura do Projeto
+
+```plaintext
+├── data/
+│   └── documentos_tecnicos/
+│       └── ABNT_NBR_IEC_60079-14.pdf
+├── src/
+│   ├── main.py
+│   ├── chatbot/
+│   │   ├── __init__.py
+│   │   ├── raptor.py
+│   │   └── modelo_llm.py
+│   ├── nlp/
+│   │   ├── __init__.py
+│   │   ├── processamento.py
+│   └── utils/
+│       ├── __init__.py
+│       └── helpers.py
+├── tests/
+│   ├── test_chatbot.py
+│   └── test_raptor.py
+├── README.md
+└── requirements.txt
