@@ -17,7 +17,7 @@ Este projeto de Trabalho de Conclusão de Curso (TCC) consiste no desenvolviment
 
 ## Introdução
 
-O propósito deste TCC é desenvolver um assistente chatbot que possa auxiliar engenheiros, técnicos e estudantes de engenharia elétrica a resolverem dúvidas e problemas comuns em instalações elétricas. Utilizando a técnica RAPTOR, o chatbot é capaz de navegar por documentos técnicos complexos, como a norma ABNT NBR IEC 60079-14, e fornecer respostas abstrativas e contextualizadas.
+O propósito deste TCC é desenvolver um assistente chatbot que possa auxiliar engenheiros, técnicos e estudantes de engenharia elétrica a resolverem dúvidas e problemas comuns em instalações elétricas. Utilizando a técnica RAPTOR, o chatbot é capaz de navegar por documentos técnicos complexos, como a norma ABNT NBR 5410, e fornecer respostas abstrativas e contextualizadas.
 
 ## Objetivos
 
@@ -33,7 +33,7 @@ Os principais objetivos deste projeto são:
 - **Framework de Desenvolvimento de Chatbots**: [Nome do Framework, ex: Rasa, GPT-3]
 - **Processamento de Linguagem Natural (NLP)**: [Bibliotecas utilizadas, ex: spaCy, NLTK]
 - **Documentação Técnica**: ABNT NBR IEC 60079-14
-- **Técnica de Recuperação**: RAPTOR (Recursive Abstractive Processing for Tree-Organized Retrieval)
+- **Técnica de Indexação**: RAPTOR (Recursive Abstractive Processing for Tree-Organized Retrieval)
 
 ## Estrutura do Projeto
 
