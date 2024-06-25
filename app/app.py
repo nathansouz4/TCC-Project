@@ -1,36 +1,55 @@
-# from app.src.core import get_documents_from_web, create_db, create_chain, process_chat
+"""
+Spark Chatbot Application
+=========================
 
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from dotenv import load_dotenv
-import os
-from langchain_google_genai import GoogleGenerativeAI
-# streamlit for the UI dev
+This file contains the main logic for the Spark chatbot application.
+The chatbot is built using the `RAG` (Retrieval-Augmented Generation) model,
+which is a state-of-the-art language model. The chatbot allows users to ask 
+questions and provides answers based on the information it has been trained on.
+
+The application is built using the Streamlit framework, 
+which provides a user-friendly interface for interacting 
+with the chatbot.
+
+Author: Nathan Souza
+"""
+
+from src.core.service import create_rag_chain
+# from src.shared.utils.utils import clear_chat_history
 import streamlit as st
-
-import textwrap
-
-
-def to_markdown(text):
-    # text=text._result.candidates[0].content.parts[0].text
-    text = text.replace('•', '  *')
-    return textwrap.indent(text, '> ', predicate=lambda _: True)
-
-
-# import sdk google gemini
-
-load_dotenv('app/src/shared/.env')
-
-GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
-
-# chose a model
-llm = GoogleGenerativeAI(model="gemini-pro")
 
 
 def clear_chat_history():
+    """
+    Clears the chat history stored in the Streamlit session state.
+    """
     st.session_state.messages = []
 
 
-st.title('Ask to Spark ⚡')
+st.title('Pergunte ao assistente Spark!⚡')
+
+with st.sidebar:
+
+    LOGO_PATH = "app/src/shared/style/images/ufrn-logo.png"
+    st.image(LOGO_PATH, use_column_width=True)
+
+    st.markdown("# Sobre o Projeto")
+    st.markdown("""
+    Este projeto é um Trabalho de Conclusão de Curso (TCC) desenvolvido por [Nathan Souza](https://www.linkedin.com/in/n4thansouza/).
+
+    - **Instituição:** Universidade Federal do Rio Grande do Norte
+    - **Curso:** Engenharia Elétrica
+    - **Orientador:** Allan de Medeiros Martins
+    """)
+
+    temperature = st.sidebar.slider(
+        'Temperatura', min_value=0.01, max_value=1.0, value=0.1, step=0.01)
+
+    llm_model = st.selectbox("Escolha um modelo LLM",
+                             ("gemini-1.5-pro", "gemini-pro"))
+
+    st.sidebar.button('Limpar o histórico de bate-papo',
+                      on_click=clear_chat_history)
 
 # Initialize chat history
 if "messages" not in st.session_state:
@@ -43,13 +62,8 @@ for message in st.session_state.messages:
 
 prompt = st.chat_input('Me faça uma pergunta!')
 
-with st.sidebar:
-
-    temperature = st.sidebar.slider(
-        'temperature', min_value=0.01, max_value=1.0, value=0.1, step=0.01)
-
-    st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
-
+# instance the chain method with the selected temperature
+chain = create_rag_chain(llm_model=llm_model, temperature=temperature)
 
 if prompt:
     # display the prompt
@@ -57,11 +71,11 @@ if prompt:
     # store the user prompt in state
     st.session_state.messages.append({'role': 'user', 'content': prompt})
 
-    response = llm.invoke(prompt)
-    formatted_text = to_markdown(response)
-    st.chat_message('ai').markdown(formatted_text)
+    with st.spinner('Gerando resposta...'):
+        response = chain.invoke(prompt)
 
-    print(response)
+    # display the response
+    st.chat_message('ai').markdown(response)
 
     # store the LLM response in state
-    st.session_state.messages.append({'role': 'ai', 'content': formatted_text})
+    st.session_state.messages.append({'role': 'ai', 'content': response})
