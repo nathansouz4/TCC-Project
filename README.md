@@ -39,26 +39,55 @@ Os principais objetivos deste projeto são:
 ## Estrutura do Projeto
 
 ```plaintext
-├── data/
-│   └── documentos_tecnicos/
-│       └── ABNT_NBR_IEC_60079-14.pdf
-├── src/
-│   ├── main.py
-│   ├── chatbot/
-│   │   ├── __init__.py
-│   │   ├── raptor.py
-│   │   └── modelo_llm.py
-│   ├── nlp/
-│   │   ├── __init__.py
-│   │   ├── processamento.py
-│   └── utils/
-│       ├── __init__.py
-│       └── helpers.py
-├── tests/
-│   ├── test_chatbot.py
-│   └── test_raptor.py
+├── RAG_RAPTOR.ipynb
+├── RAG_summaries.ipynb
 ├── README.md
-└── requirements.txt
+├── app
+│   ├── __pycache__
+│   │   └── app.cpython-312.pyc
+│   ├── app.py
+│   └── src
+│       ├── core
+│       │   ├── __pycache__
+│       │   │   └── service.cpython-312.pyc
+│       │   └── service.py
+│       ├── database
+│       │   └── pdf
+│       │       ├── ABNT_NBR_IEC_60079_14.pdf
+│       │       ├── NBR_10898.pdf
+│       │       ├── NBR_13570.pdf
+│       │       ├── NBR_14039.pdf
+│       │       ├── NBR_15514.pdf
+│       │       ├── NBR_16280.pdf
+│       │       ├── NBR_5410.pdf
+│       │       ├── NBR_5413.pdf
+│       │       ├── NBR_5419_1.pdf
+│       │       ├── NBR_5419_2.pdf
+│       │       ├── NBR_5419_3.pdf
+│       │       └── NBR_5419_4.pdf
+│       └── shared
+│           ├── __pycache__
+│           │   └── style.cpython-312.pyc
+│           ├── style
+│           │   └── images
+│           │       ├── logo_2.png
+│           │       └── ufrn-logo.png
+│           └── utils
+│               ├── __pycache__
+│               │   └── utils.cpython-312.pyc
+│               └── utils.py
+├── dockerfile
+├── env.yml
+├── pdf_processing.log
+├── test
+│   └── nr-10.pdf
+└── vectorstore_db
+    ├── 7f5c301c-89d1-495e-8c6a-656f8cb9e948
+    │   ├── data_level0.bin
+    │   ├── header.bin
+    │   ├── length.bin
+    │   └── link_lists.bin
+    └── chroma.sqlite3
 =======
 # Projeto RAG com LangChain
 
