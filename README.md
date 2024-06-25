@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Desenvolvimento de um Assistente Chatbot Inteligente para Instalações Elétricas
 
 ## Visão Geral
@@ -88,7 +87,8 @@ Os principais objetivos deste projeto são:
     │   ├── length.bin
     │   └── link_lists.bin
     └── chroma.sqlite3
-=======
+```   
+
 # Projeto RAG com LangChain
 
 Bem-vindo ao repositório do Projeto RAG (Retrieval-Augmented Generation) utilizando o framework LangChain. Este projeto tem como objetivo construir um sistema que combina a recuperação de informações (retrieval) com a geração de texto (generation) para fornecer respostas aprimoradas e contextualmente relevantes.
@@ -121,4 +121,5 @@ Para começar a usar este projeto, siga as etapas abaixo:
    ```bash
    git clone https://github.com/seu-usuario/projeto-rag-langchain.git
    cd projeto-rag-langchain
->>>>>>> dev
+   
+> dev
