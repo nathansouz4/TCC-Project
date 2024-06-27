@@ -26,6 +26,14 @@ def clear_chat_history():
     st.session_state.messages = []
 
 
+# ================================================================
+
+st.set_page_config(
+    page_title="Chatbot Spark",
+    page_icon="⚡"
+)
+
+
 st.title('Pergunte ao assistente Spark!⚡')
 
 with st.sidebar:
@@ -35,7 +43,7 @@ with st.sidebar:
 
     st.markdown("# Sobre o Projeto")
     st.markdown("""
-    Este projeto é um Trabalho de Conclusão de Curso (TCC) desenvolvido por [Nathan Souza](https://www.linkedin.com/in/n4thansouza/).
+    Este projeto é um Trabalho de Conclusão de Curso (TCC) desenvolvido por [Nathan Souza](https://github.com/nathansouz4).
 
     - **Instituição:** Universidade Federal do Rio Grande do Norte
     - **Curso:** Engenharia Elétrica
@@ -43,7 +51,7 @@ with st.sidebar:
     """)
 
     temperature = st.sidebar.slider(
-        'Temperatura', min_value=0.01, max_value=1.0, value=0.1, step=0.01)
+        'Temperatura', min_value=0.0, max_value=1.0, value=0.1, step=0.01)
 
     llm_model = st.selectbox("Escolha um modelo LLM",
                              ("gemini-1.5-pro", "gemini-pro"))

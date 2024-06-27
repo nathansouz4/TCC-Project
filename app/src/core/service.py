@@ -23,7 +23,7 @@ def create_rag_chain(llm_model: str = 'gemini-1.5-pro', temperature: float = 0.0
     model = GoogleGenerativeAI(model=llm_model, temperature=temperature)
 
     # Directory where the vectorstore will be persisted.
-    persist_directory = "vectorstore_db"
+    persist_directory = "vectorstore_db_openai_v2"
 
     # Initializes the vectorstore.
     vectorstore = Chroma(  # Initializes the vectorstore again with different parameters.
@@ -36,10 +36,10 @@ def create_rag_chain(llm_model: str = 'gemini-1.5-pro', temperature: float = 0.0
 
     # Define a retriever for the vectorstore.
     # Creates a retriever for the vectorstore.
-    retriever = vectorstore.as_retriever()
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
 
     template = """
-    Você é um assistente chatbot para tarefa de question answering(QA). Responda à pergunta baseado no seguinte contexto:
+    Você é um assistente chatbot para tarefa de question answering(QA). Se o contexto nao for relevante para a pergunta, não informe essa informação.Responda à pergunta baseado no seguinte contexto:
     {context}
 
     Responda a seguinte pergunta:
