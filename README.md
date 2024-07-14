@@ -32,9 +32,6 @@ Os principais objetivos deste projeto são:
 - **Linguagem de Programação**: Python
 - **Framework de Desenvolvimento de Chatbots**: LangChain, Streamlit
 - **Processamento de Linguagem Natural (NLP)**: spaCy, NLTK
-- **Documentação Técnica**:
-    --ABNT NBR IEC 60079-14
-    -- ABNT 5410
 - **Técnica de Indexação**: RAPTOR (Recursive Abstractive Processing for Tree-Organized Retrieval)
 
 ## Estrutura do Projeto
