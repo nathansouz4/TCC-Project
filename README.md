@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Desenvolvimento de um Assistente Chatbot Inteligente para Instalações Elétricas
 
 ## Visão Geral
@@ -31,7 +30,7 @@ Os principais objetivos deste projeto são:
 ## Tecnologias Utilizadas
 
 - **Linguagem de Programação**: Python
-- **Framework de Desenvolvimento de Chatbots**: [Nome do Framework, ex: Rasa, GPT-3]
+- **Framework de Desenvolvimento de Chatbots**: [LangChain, Streamlit]
 - **Processamento de Linguagem Natural (NLP)**: [Bibliotecas utilizadas, ex: spaCy, NLTK]
 - **Documentação Técnica**: ABNT NBR IEC 60079-14
 - **Técnica de Indexação**: RAPTOR (Recursive Abstractive Processing for Tree-Organized Retrieval)
